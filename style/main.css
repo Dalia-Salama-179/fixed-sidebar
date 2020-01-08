@@ -1,0 +1,151 @@
+body {
+    background-color: #f0f2f9;
+}
+
+p, body, ul, h3 {
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+.display-block {
+    display: block;
+}
+
+.d-row {
+    display: flex;
+    margin: 0 -10px;
+}
+
+.d-row > div[class^="d-column"] {
+    margin: 0 10px;
+}
+
+.d-column-75 {
+    width: calc(75% - 20px);
+}
+
+.d-column-50 {
+    width: calc(50% - 20px);
+}
+
+.d-column-25 {
+    width: calc(25% - 20px);
+}
+
+.d-columns-wrapper > div {
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+
+.profile-data {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.profile-img {
+    width: 80px;
+    border-radius: 100%;
+    margin-bottom: 15px;
+}
+
+.profile-data p {
+    font-size: 18px;
+    color: #a914a9;
+}
+
+.d-contact-form p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.d-form-group {
+    margin-bottom: 15px;
+}
+
+.d-form-group label {
+    color: #7E7B7E !important;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.d-form-control {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #eaeaea;
+    border-radius: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+textarea.d-form-control {
+    height: 60px;
+}
+
+.d-article-img {
+    margin-bottom: 15px;
+}
+
+.d-article-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #a914a9;
+    margin-bottom: 15px;
+}
+
+.d-article-desc {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.d-list-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.d-article-list {
+    margin-bottom: 20px;
+}
+
+.d-article-list li {
+    margin-bottom: 10px;
+}
+
+
+.d-related-article-wrapper {
+    margin: 20px 0;
+}
+
+.d-related-article-content {
+    padding: 10px;
+}
+
+.d-related-article {
+    background-color: #ffffff;
+}
+
+.d-related-article .d-related-article-title {
+    margin-bottom: 10px;
+}
+
+.d-related-article .d-related-article-title a {
+    font-size: 18px;
+    color: #a914a9;
+    text-decoration: none;
+}
+
+.d-related-article p {
+    color: #75768A;
+}
