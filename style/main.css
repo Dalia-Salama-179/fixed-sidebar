@@ -1,3 +1,13 @@
+/* --------------------------------------------------------------------------------------------------------------------
+1. General data
+2. Rows
+3. Sidebar profile data
+4. Sidebar contact form
+5. Article data
+6. Related article
+----------------------------------------------------------------------------------------------------------------------*/
+
+/* 1. General data */
 body {
     background-color: #f0f2f9;
 }
@@ -19,6 +29,8 @@ img {
 .display-block {
     display: block;
 }
+
+/*  2. Rows */
 
 .d-row {
     display: flex;
@@ -46,6 +58,7 @@ img {
     padding: 15px;
 }
 
+/* 3. Sidebar profile data */
 
 .profile-data {
     text-align: center;
@@ -64,6 +77,8 @@ img {
     font-size: 18px;
     color: #a914a9;
 }
+
+/* 4. Sidebar contact form */
 
 .d-contact-form p {
     text-align: center;
@@ -92,6 +107,8 @@ img {
 textarea.d-form-control {
     height: 60px;
 }
+
+/* 5. Article data */
 
 .d-article-img {
     margin-bottom: 15px;
@@ -123,6 +140,7 @@ textarea.d-form-control {
     margin-bottom: 10px;
 }
 
+/* 6. Related article */
 
 .d-related-article-wrapper {
     margin: 20px 0;
