@@ -5,6 +5,7 @@
 4. Sidebar contact form
 5. Article data
 6. Related article
+7. Plugin style
 ----------------------------------------------------------------------------------------------------------------------*/
 
 /* 1. General data */
@@ -106,6 +107,7 @@ img {
 
 textarea.d-form-control {
     height: 60px;
+    padding: 5px 10px;
 }
 
 /* 5. Article data */
@@ -140,6 +142,15 @@ textarea.d-form-control {
     margin-bottom: 10px;
 }
 
+.d-btn-primary {
+    padding: 8px 18px;
+    box-sizing: content-box;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+    background: #a914a9;
+    color: #fff;
+}
+
 /* 6. Related article */
 
 .d-related-article-wrapper {
@@ -166,4 +177,10 @@ textarea.d-form-control {
 
 .d-related-article p {
     color: #75768A;
+}
+
+/* Plugin style */
+
+.d-fixed-col {
+    align-self: flex-start;
 }
