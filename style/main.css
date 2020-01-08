@@ -13,7 +13,7 @@ body {
     background-color: #f0f2f9;
 }
 
-p, body, ul, h3 {
+p, body, ul, h1, h3 {
     margin: 0;
 }
 
@@ -31,10 +31,15 @@ img {
     display: block;
 }
 
+.d-header {
+    margin: 10px 0;
+}
+
 /*  2. Rows */
 
 .d-row {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 -10px;
 }
 
@@ -54,9 +59,10 @@ img {
     width: calc(25% - 20px);
 }
 
-.d-columns-wrapper > div {
+.d-columns-wrapper .d-scrolled-col, .d-fixed-col {
     background-color: #ffffff;
     padding: 15px;
+    box-sizing: border-box;
 }
 
 /* 3. Sidebar profile data */
@@ -181,6 +187,11 @@ textarea.d-form-control {
 
 /* Plugin style */
 
-.d-fixed-col {
+.d-fixed-col, .d-scrolled-col {
     align-self: flex-start;
+}
+
+.fixed-on-scroll {
+    position: fixed;
+    top: 0;
 }
