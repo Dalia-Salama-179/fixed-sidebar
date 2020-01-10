@@ -45,6 +45,7 @@ img {
 
 .d-row > div[class^="d-column"] {
     margin: 0 10px;
+    position: relative;
 }
 
 .d-column-75 {
@@ -194,4 +195,9 @@ textarea.d-form-control {
 .fixed-on-scroll {
     position: fixed;
     top: 0;
+}
+
+.absolute-bottom {
+    position: absolute;
+    bottom: 0;
 }

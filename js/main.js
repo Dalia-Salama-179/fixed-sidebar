@@ -6,7 +6,8 @@ $(window).on('load', function () {
     let scrolledColHeight = $scrolledCol.outerHeight();
     let offsetTop = $scrolledCol.offset().top;
     let windowScrollTop,
-        windowHeight = $(window).height();
+        windowHeight = $(window).height(),
+        scrolledOffsetBottom = (offsetTop + scrolledColHeight) - windowHeight
 
 
     if (scrolledColHeight > fixedColHeight) {
@@ -16,8 +17,15 @@ $(window).on('load', function () {
             if (fixedColHeight - offsetTop < windowHeight) {
                 if (windowScrollTop >= offsetTop) {
                     $fixedCol.addClass('fixed-on-scroll')
+                    $fixedCol.removeClass('absolute-bottom')
                 } else {
                     $fixedCol.removeClass('fixed-on-scroll')
+                }
+
+                // If we reach end of column
+                if (windowScrollTop >= scrolledOffsetBottom - (fixedColHeight - windowHeight)) {
+                    $fixedCol.removeClass('fixed-on-scroll')
+                    $fixedCol.addClass('absolute-bottom')
                 }
             }
         })
