@@ -5,7 +5,8 @@
 4. Sidebar contact form
 5. Article data
 6. Related article
-7. Plugin style
+7. Author Data
+8. Plugin style
 ----------------------------------------------------------------------------------------------------------------------*/
 
 /* 1. General data */
@@ -13,7 +14,7 @@ body {
     background-color: #f0f2f9;
 }
 
-p, body, ul, h1, h3 {
+p, body, ul, h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
@@ -68,25 +69,31 @@ img {
 
 /* 3. Sidebar profile data */
 
-.profile-data {
+.d-profile-data {
     text-align: center;
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #eaeaea;
 }
 
-.profile-img {
+.d-profile-img {
     width: 80px;
     border-radius: 100%;
     margin-bottom: 15px;
 }
 
-.profile-data p {
+.d-profile-data p {
     font-size: 18px;
     color: #a914a9;
 }
 
 /* 4. Sidebar contact form */
+
+.d-contact-form {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+}
 
 .d-contact-form p {
     text-align: center;
@@ -170,6 +177,7 @@ textarea.d-form-control {
 
 .d-related-article {
     background-color: #ffffff;
+    margin-bottom: 20px;
 }
 
 .d-related-article .d-related-article-title {
@@ -186,7 +194,41 @@ textarea.d-form-control {
     color: #75768A;
 }
 
-/* Plugin style */
+/* 7. Author Data */
+.d-author h4, .d-author-articles h4 {
+    color: #a914a9;
+    margin-bottom: 10px;
+}
+
+.d-author {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.d-author .d-author-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.d-author .d-author-row svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.d-author .d-author-row a {
+    color: #7E7B7E;
+    text-decoration: none;
+    transition: all ease-in-out 0.2s;
+}
+
+.d-author .d-author-row a:hover {
+    color: #000000;
+}
+
+/* 8. Plugin style */
 
 .d-fixed-col, .d-scrolled-col {
     align-self: flex-start;
