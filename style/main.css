@@ -243,3 +243,8 @@ textarea.d-form-control {
     position: absolute;
     bottom: 0;
 }
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+}

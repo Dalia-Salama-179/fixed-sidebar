@@ -7,13 +7,14 @@ $(window).on('load', function () {
     let offsetTop = $scrolledCol.offset().top;
     let windowScrollTop,
         windowHeight = $(window).height(),
-        scrolledOffsetBottom = (offsetTop + scrolledColHeight) - windowHeight
-
+        scrolledOffsetBottom = (offsetTop + scrolledColHeight) - windowHeight,
+        fixedOffsetBottom = (offsetTop + fixedColHeight) - windowHeight
 
     if (scrolledColHeight > fixedColHeight) {
         $fixedCol.css('width', fixedColWidth)
         $(window).scroll(function () {
             windowScrollTop = $(window).scrollTop();
+            // If the sidebar height is less than content height
             if (fixedColHeight - offsetTop < windowHeight) {
                 if (windowScrollTop >= offsetTop) {
                     $fixedCol.addClass('fixed-on-scroll')
@@ -26,6 +27,18 @@ $(window).on('load', function () {
                 if (windowScrollTop >= scrolledOffsetBottom - (fixedColHeight - windowHeight)) {
                     $fixedCol.removeClass('fixed-on-scroll')
                     $fixedCol.addClass('absolute-bottom')
+                }
+            } else {
+                if (fixedOffsetBottom < windowScrollTop) {
+                    $fixedCol.addClass('fixed-bottom')
+                    $fixedCol.removeClass('absolute-bottom')
+                    if (windowScrollTop > scrolledOffsetBottom) {
+                        $fixedCol.removeClass('fixed-bottom')
+                        $fixedCol.addClass('absolute-bottom')
+                    }
+                } else {
+                    $fixedCol.removeClass('fixed-bottom')
+                    $fixedCol.removeClass('absolute-bottom')
                 }
             }
         })
